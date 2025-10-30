@@ -1,0 +1,44 @@
+body {
+    background-color: #f4f6fa;
+    font-family: 'Helvetica', sans-serif;
+    margin: 40px;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+h1 {
+    color: #2a4d69;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #4b86b4;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f37736;
+}
+
+section {
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
