@@ -20,6 +20,10 @@ h2 {
     color: #4b86b4;
 }
 
+nav {
+    margin-top: 10px;
+}
+
 nav a {
     margin: 0 10px;
     text-decoration: none;
@@ -86,14 +90,6 @@ section {
         width: 180px;
         height: 180px;
     }
-}
-
-/* Global image style (for non-homepage images) */
-img {
-    display: block;
-    margin: 25px auto;
-    border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer styling */
