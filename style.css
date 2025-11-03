@@ -1,4 +1,4 @@
-/* Base layout */
+/* ---------- Global Layout ---------- */
 body {
     background-color: #f4f6fa;
     font-family: "Helvetica", sans-serif;
@@ -6,14 +6,17 @@ body {
     color: #222;
 }
 
+/* ---------- Header and Navigation ---------- */
 header {
     text-align: center;
-    padding-bottom: 20px;
+    padding: 20px 0;
     border-bottom: 2px solid #ccc;
+    background-color: #e8eef5;
 }
 
 h1 {
     color: #2a4d69;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -35,14 +38,14 @@ nav a:hover {
     color: #f37736;
 }
 
-/* General section layout */
+/* ---------- Section Layout ---------- */
 section {
     max-width: 900px;
     margin: auto;
     line-height: 1.6;
 }
 
-/* Home page intro layout (text + circular photo) */
+/* ---------- Home Page Intro (text + photo) ---------- */
 .intro {
     display: flex;
     align-items: center;
@@ -78,8 +81,53 @@ section {
     box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 
-/* Responsive layout for mobile screens */
-@media (max-width: 700px) {
+/* ---------- Research Page Layout ---------- */
+.research-section {
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.research-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.research-text {
+    flex: 3;
+}
+
+.research-logo {
+    flex: 1;
+    text-align: right;
+}
+
+.research-logo img {
+    width: 160px;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.95;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.research-logo img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* ---------- Responsive Layout for Mobile ---------- */
+@media (max-width: 750px) {
+    /* Home page */
     .intro {
         flex-direction: column;
         text-align: center;
@@ -90,12 +138,19 @@ section {
         width: 180px;
         height: 180px;
     }
-}
 
-/* Footer styling */
-footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 0.9em;
-    color: #555;
+    /* Research page */
+    .research-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .research-logo {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .research-logo img {
+        width: 120px;
+    }
 }
